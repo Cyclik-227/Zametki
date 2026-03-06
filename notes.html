@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои заметки — Zametki</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <main>
+    <div class="nav">
+      <a class="nav-logo" href="index.html">Zametki</a>
+      <ul class="nav-links">
+        <li><a href="index.html#footer">Подробнее</a></li>
+        <li><a href="2page.html">наши приимущества</a></li>
+        <li><a href="https://github.com/Cyclik-227">авторы</a></li>
+        <li><a href="https://github.com/Cyclik-227">Поддержка</a></li>
+        <li><a href="https://github.com/Cyclik-227">Блог</a></li>
+        <li><button class="btn-outline">Мои заметки</button></li>
+      </ul>
+    </div>
+
+    <div class="notes-page">
+      <div class="notes-title">мои заметки</div>
+
+        <form class="new-note" onsubmit="addNote(event)">
+          <input type="text" id="input-title" placeholder="Название заметки…" autocomplete="off">
+          <button type="submit" class="btn-dark" style="padding: 14px 28px; font-size: 18px;">+</button>
+        </form>
+
+      <div id="notes-list"></div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

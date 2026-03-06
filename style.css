@@ -447,6 +447,80 @@ nav a {
     transition: color 0.2s;
 }
 
+/*заметки*/
+
+.notes-page {
+    max-width: 680px;
+    margin: 60px auto;
+    padding: 0 72px;
+}
+
+.notes-title {
+    background: #B9FF66;
+    padding: 4px 8px;
+    font-size: 40px;
+    font-weight: 700;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.new-note {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.new-note input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 2px solid #191A23;
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: none;
+}
+
+details {
+    border: 2px solid #191A23;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    box-shadow: 4px 4px 0px #191A23;
+    background: #F3F3F3;
+    overflow: hidden;
+}
+
+summary {
+    padding: 16px 22px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+details[open] summary {
+    background: #B9FF66;
+}
+
+textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 16px 22px;
+    border: none;
+    border-top: 2px solid #191A23;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+    background: #fff;
+    outline: none;
+}
+
 /*анимашки*/
 
 @keyframes fadeIn {
